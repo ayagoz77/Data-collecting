@@ -13,7 +13,7 @@ durat_list = []
 
 def main():
     url_part = 'https://rezka.ag/films/best/page/'
-    #758 for page to get data, not all pages
+    #758 pages to get data, not all pages included
     for i in range(1, 758):
         url = url_part + str(i) + '/'
         page_source = requests.get(url).text
